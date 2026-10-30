@@ -1,0 +1,37 @@
+# Python / Node ortamları (kurulum.bat yeniden oluşturur)
+backend/.venv/
+backend/.venv-train/
+frontend/node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Gizli ayarlar (anahtarlar) — örnek: backend/.env.example
+backend/.env
+frontend/.env.local
+
+# Çalışma verisi: tarama geçmişi ve yüklenen fotoğraflar
+backend/data/
+
+# Veri seti görselleri internetten (DuckDuckGo) ve Kaggle/HuggingFace'ten toplandı; telif hakları sahiplerine ait
+# olduğu için depoda paylaşılmaz. Yeniden oluşturmak için: backend/ml/README.md → "Veri setini oluşturma"
+backend/ml/dataset/
+backend/ml/backgrounds/
+backend/ml/dataset_user/
+
+# ML ara çıktıları (büyük; yeniden üretilebilir)
+backend/ml/raw/
+backend/ml/raw_extra/
+backend/ml/runs/
+backend/ml/analysis/
+backend/ml/weights_*/
+
+# Proje raporu teslimle ayrıca verilir (herkese açık depoda paylaşılmaz)
+rapor/
+
+# Editör / sistem
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/

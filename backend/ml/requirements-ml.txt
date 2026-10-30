@@ -1,0 +1,4 @@
+# Sadece veri seti hazırlamak için gerekli ek paketler (sunucu çalışırken gerekmez)
+ddgs==9.16.1
+open_clip_torch==3.3.0
+pyarrow==26.0.0
