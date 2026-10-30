@@ -86,7 +86,7 @@ Test: `python -m pytest tests/test_ai_fallback.py -n 0`.
 ## Kullanıcı geri bildirimiyle öğrenme (insan-döngüde)
 Sitede her sonucun altında **"Sonuç doğru mu?"** kartı var. Onaylanan/düzeltilen fotoğraflar
 `ml/dataset_user/<sinif>/` altına kaydedilir ve sonraki eğitimlerde (×3 ağırlıkla) kullanılır.
-Projenin kök klasöründeki **`modeli_guncelle.bat`**: mevcut modelden ince ayar yapar (~8 dk), eski ve yeni modeli
+Projenin kök klasöründeki **`py modeli_guncelle.py`**: mevcut modelden ince ayar yapar (~8 dk), eski ve yeni modeli
 karşılaştırır, onay verilirse yeni modeli yükler (öncekini `ml/weights_onceki/` içine yedekler).
 En iyi sonuç için: hocaya göstereceğiniz her parçanın kendi kameranızla 10–20 fotoğrafını tarayıp onaylayın.
 

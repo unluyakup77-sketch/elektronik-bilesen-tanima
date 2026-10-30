@@ -6,7 +6,7 @@ Turkish-language web app for an EEE "Derin Öğrenme" course project: upload/tak
 None — public app, no login.
 
 ## Local run (Windows)
-kurulum.bat (venv + pip + npm install) then baslat.bat. Storage is SQLite (backend/data/elektrovision.db, lib/db.py) — no MongoDB. Çift kontrol calls the Gemini REST API directly with GEMINI_API_KEY from backend/.env (see .env.example); without a key it falls back to the CNN with a note.
+py kurulum.py (venv + pip + npm install) then py baslat.py. Storage is SQLite (backend/data/elektrovision.db, lib/db.py) — no MongoDB. Çift kontrol calls the Gemini REST API directly with GEMINI_API_KEY from backend/.env (see .env.example); without a key it falls back to the CNN with a note.
 
 ## Classes (keys)
 direnc, led, seramik_kondansator, elektrolitik_kondansator, transistor, diyot, entegre, potansiyometre, bobin, role, sigorta, transformator, buzzer, kristal_osilator, buton, display_7seg, arduino, esp32, stm32. Model's class order comes from ml/weights/metrics.json. AI may also return `bilinmiyor` (not a component) → `is_component=false`, name "Tanımlanamadı".

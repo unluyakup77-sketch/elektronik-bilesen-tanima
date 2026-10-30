@@ -1,4 +1,4 @@
-# Python / Node ortamları (kurulum.bat yeniden oluşturur)
+# Python / Node ortamları (kurulum.py yeniden oluşturur)
 backend/.venv/
 backend/.venv-train/
 frontend/node_modules/

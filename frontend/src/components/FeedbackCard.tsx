@@ -8,7 +8,7 @@ import { apiGet, apiPost, errorMessage } from "@/lib/api";
 import type { ComponentInfo, FeedbackResult, Prediction } from "@/lib/types";
 
 // "Sonuç doğru mu?" — kullanıcının onayı/düzeltmesi fotoğrafı ml/dataset_user/<etiket>/ altına kaydeder.
-// Bu gerçek fotoğraflar modeli_guncelle.bat ile yapılan ince ayarda eğitime girer (insan-döngüde öğrenme).
+// Bu gerçek fotoğraflar modeli_guncelle.py ile yapılan ince ayarda eğitime girer (insan-döngüde öğrenme).
 export function FeedbackCard({ result }: { result: Prediction }) {
   const qc = useQueryClient();
   const components = useQuery({ queryKey: ["components"], queryFn: () => apiGet<ComponentInfo[]>("/components") });

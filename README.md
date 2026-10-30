@@ -9,8 +9,8 @@ Model ve eğitim ayrıntıları: [backend/ml/README.md](backend/ml/README.md).
 
 Gerekenler: **Python 3.12** ve **Node.js (LTS)**.
 
-1. `kurulum.bat` — ilk seferde bir kez çalıştırılır (Python sanal ortamı, PyTorch vb. paketler, frontend paketleri).
-2. `baslat.bat` — backend ve frontend'i iki pencerede açar, tarayıcıda `http://localhost:3000` açılır.
+1. `py kurulum.py` — ilk seferde bir kez çalıştırılır (Python sanal ortamı, PyTorch vb. paketler, frontend paketleri).
+2. `py baslat.py` — backend ve frontend'i iki pencerede açar, tarayıcıda `http://localhost:3000` açılır.
 
 İlk açılışta backend'in hazır olması PyTorch yüklendiği için 30–60 sn sürebilir.
 Kapatmak için açılan iki komut penceresini kapatın.
